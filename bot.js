@@ -34,12 +34,12 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
 
 client.on('message', message => { 
        var prefix = '-';
-    if (message.content.startsWith(prefix + 'EmojiList')) {
+    if (message.content.startsWith(prefix + 'allemoji')) {
 
         const List = message.guild.emojis.map(e => e.toString()).join(" ");
 
         const EmojiList = new Discord.RichEmbed()
-            .setTitle('➠ Emoji\'s')
+            .setTitle('➠ الايموجيات ياحلو's')
             .setAuthor(message.guild.name, message.guild.iconURL) 
             .setColor('RANDOM')
             .setDescription(List) 
