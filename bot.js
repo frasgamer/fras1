@@ -34,7 +34,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
 
 client.on('message', message => { 
        var prefix = '-';
-    if (message.content.startsWith(prefix + 'allemoji')) {
+    if (message.content.startsWith(prefix + 'EmojiList')) {
 
         const List = message.guild.emojis.map(e => e.toString()).join(" ");
 
