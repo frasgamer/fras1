@@ -30,4 +30,28 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
   }
  });
 
+
+
+client.on('message', message => { 
+       var prefix = '-';
+    if (message.content.startsWith(prefix + 'allemoji')) {
+
+        const List = message.guild.emojis.map(e => e.toString()).join(" ");
+
+        const EmojiList = new Discord.RichEmbed()
+            .setTitle('➠ Emoji\'s')
+            .setAuthor(message.guild.name, message.guild.iconURL) 
+            .setColor('RANDOM')
+            .setDescription(byfras) 
+            .setTimestamp() 
+            .setFooter(message.guild.name)
+        message.channel.send(allemoji) 
+
+       
+         
+    }
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
