@@ -42,7 +42,7 @@ client.on('message', message => {
             .setTitle('➠ Emoji\'s')
             .setAuthor(message.guild.name, message.guild.iconURL) 
             .setColor('RANDOM')
-            .setDescription(byfras) 
+            .setDescription(List) 
             .setTimestamp() 
             .setFooter(message.guild.name)
         message.channel.send(allemoji) 
