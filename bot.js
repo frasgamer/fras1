@@ -39,7 +39,7 @@ client.on('message', message => {
         const List = message.guild.emojis.map(e => e.toString()).join(" ");
 
         const EmojiList = new Discord.RichEmbed()
-            .setTitle('➠ الايموجيات ياحلو's')
+            .setTitle('➠ الايموجيات يا\'حلو')
             .setAuthor(message.guild.name, message.guild.iconURL) 
             .setColor('RANDOM')
             .setDescription(List) 
