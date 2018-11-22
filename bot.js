@@ -45,7 +45,7 @@ client.on('message', message => {
             .setDescription(List) 
             .setTimestamp() 
             .setFooter(message.guild.name)
-        message.channel.send(allemoji) 
+        message.channel.send(EmojiList) 
 
        
          
